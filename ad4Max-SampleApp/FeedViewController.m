@@ -74,7 +74,10 @@
 
 - (NSString*)getAdBoxId
 {
-    return @"38eef07c-f3c0-4caf-89e8-251e920d0668";
+    if(UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation]))
+        return @"38eef07c-f3c0-4caf-89e8-251e920d0668";
+    else
+        return @"8e2dadaa-e618-4c07-aba3-c6fc532c05c4";
 }
 
 -(NSString*)getAdServerURL
@@ -85,11 +88,23 @@
 -(void)bannerView:(Ad4MaxBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
     NSLog(@"Error");
+    if (self.adView.frame.origin.y >= 0.0) {
+        [UIView beginAnimations:@"hide add" context:nil];
+        [UIView setAnimationDuration:0.5];
+        [self.tableView setFrame:CGRectMake(0.0, 0.0, self.tableView.frame.size.width, self.tableView.frame.size.  height+50)];
+        [self.adView setFrame:CGRectMake(0.0, -50.0, self.adView.frame.size.width, self.adView.frame.size.height)];
+        [UIView commitAnimations];
+    }
 }
 
 - (void)bannerViewWillLoadAd:(Ad4MaxBannerView *)banner
 {
     NSLog(@"bannerViewWillLoadAd:");
+}
+
+- (void)bannerViewDidLoadAd:(Ad4MaxBannerView *)banner 
+{
+    NSLog(@"bannerViewDidLoadAd:");
     
     if (self.adView.frame.origin.y < 0.0) {    
         [UIView beginAnimations:@"show add" context:nil];
@@ -98,11 +113,6 @@
         [self.adView setFrame:CGRectMake(0.0, 0.0, self.adView.frame.size.width, self.adView.frame.size.height)];
         [UIView commitAnimations];
     }
-}
-
-- (void)bannerViewDidLoadAd:(Ad4MaxBannerView *)banner 
-{
-    NSLog(@"bannerViewDidLoadAd:");
 }
 
 #pragma mark -
