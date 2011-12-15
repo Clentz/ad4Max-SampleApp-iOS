@@ -29,6 +29,8 @@
 		1193F1DC149A113A000FDE82 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1193F1DA149A113A000FDE82 /* AboutViewController.xib */; };
 		1193F207149A417D000FDE82 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F206149A417D000FDE82 /* about.png */; };
 		1193F20A149A41EA000FDE82 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F209149A41EA000FDE82 /* feed.png */; };
+		1193F211149A43CE000FDE82 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F20F149A43CE000FDE82 /* Icon.png */; };
+		1193F212149A43CE000FDE82 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F210149A43CE000FDE82 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		1193F1DA149A113A000FDE82 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		1193F206149A417D000FDE82 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		1193F209149A41EA000FDE82 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		1193F20F149A43CE000FDE82 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1193F210149A43CE000FDE82 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 		1193F1991499F578000FDE82 /* ad4Max-SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1193F20F149A43CE000FDE82 /* Icon.png */,
+				1193F210149A43CE000FDE82 /* Icon@2x.png */,
 				1193F209149A41EA000FDE82 /* feed.png */,
 				1193F206149A417D000FDE82 /* about.png */,
 				1193F1AF149A0BA4000FDE82 /* MWFeedParser */,
@@ -242,6 +248,8 @@
 				1193F1DC149A113A000FDE82 /* AboutViewController.xib in Resources */,
 				1193F207149A417D000FDE82 /* about.png in Resources */,
 				1193F20A149A41EA000FDE82 /* feed.png in Resources */,
+				1193F211149A43CE000FDE82 /* Icon.png in Resources */,
+				1193F212149A43CE000FDE82 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
