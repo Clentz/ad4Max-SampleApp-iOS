@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1193F1941499F578000FDE82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1931499F578000FDE82 /* UIKit.framework */; };
+		1193F1961499F578000FDE82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1951499F578000FDE82 /* Foundation.framework */; };
+		1193F1981499F578000FDE82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1971499F578000FDE82 /* CoreGraphics.framework */; };
+		1193F19E1499F578000FDE82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1193F19C1499F578000FDE82 /* InfoPlist.strings */; };
+		1193F1A01499F578000FDE82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F19F1499F578000FDE82 /* main.m */; };
+		1193F1A41499F578000FDE82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1A31499F578000FDE82 /* AppDelegate.m */; };
+		1193F1AD1499F9A6000FDE82 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1AB1499F9A6000FDE82 /* FeedViewController.m */; };
+		1193F1AE1499F9A6000FDE82 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1193F1AC1499F9A6000FDE82 /* FeedViewController.xib */; };
+		1193F1C2149A0BA4000FDE82 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1B3149A0BA4000FDE82 /* GTMNSString+HTML.m */; };
+		1193F1C3149A0BA4000FDE82 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1B5149A0BA4000FDE82 /* NSDate+InternetDateTime.m */; };
+		1193F1C4149A0BA4000FDE82 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1B7149A0BA4000FDE82 /* NSString+HTML.m */; };
+		1193F1C5149A0BA4000FDE82 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1B9149A0BA4000FDE82 /* NSString+XMLEntities.m */; };
+		1193F1C6149A0BA4000FDE82 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1BC149A0BA4000FDE82 /* MWFeedInfo.m */; };
+		1193F1C7149A0BA4000FDE82 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1BE149A0BA4000FDE82 /* MWFeedItem.m */; };
+		1193F1C8149A0BA4000FDE82 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1C0149A0BA4000FDE82 /* MWFeedParser.m */; };
+		1193F1D3149A1108000FDE82 /* Ad4Max.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D2149A1108000FDE82 /* Ad4Max.framework */; };
+		1193F1D5149A110E000FDE82 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D4149A110E000FDE82 /* CoreTelephony.framework */; };
+		1193F1D7149A1117000FDE82 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */; };
+		1193F1DB149A113A000FDE82 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1D9149A113A000FDE82 /* AboutViewController.m */; };
+		1193F1DC149A113A000FDE82 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1193F1DA149A113A000FDE82 /* AboutViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1193F18F1499F578000FDE82 /* ad4Max-SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ad4Max-SampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1193F1931499F578000FDE82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1193F1951499F578000FDE82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1193F1971499F578000FDE82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1193F19B1499F578000FDE82 /* ad4Max-SampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ad4Max-SampleApp-Info.plist"; sourceTree = "<group>"; };
+		1193F19D1499F578000FDE82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1193F19F1499F578000FDE82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1193F1A11499F578000FDE82 /* ad4Max-SampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ad4Max-SampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		1193F1A21499F578000FDE82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1193F1A31499F578000FDE82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1193F1AA1499F9A6000FDE82 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		1193F1AB1499F9A6000FDE82 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		1193F1AC1499F9A6000FDE82 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		1193F1B1149A0BA4000FDE82 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		1193F1B2149A0BA4000FDE82 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		1193F1B3149A0BA4000FDE82 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		1193F1B4149A0BA4000FDE82 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		1193F1B5149A0BA4000FDE82 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		1193F1B6149A0BA4000FDE82 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		1193F1B7149A0BA4000FDE82 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		1193F1B8149A0BA4000FDE82 /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEntities.h"; sourceTree = "<group>"; };
+		1193F1B9149A0BA4000FDE82 /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
+		1193F1BB149A0BA4000FDE82 /* MWFeedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedInfo.h; sourceTree = "<group>"; };
+		1193F1BC149A0BA4000FDE82 /* MWFeedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedInfo.m; sourceTree = "<group>"; };
+		1193F1BD149A0BA4000FDE82 /* MWFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedItem.h; sourceTree = "<group>"; };
+		1193F1BE149A0BA4000FDE82 /* MWFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedItem.m; sourceTree = "<group>"; };
+		1193F1BF149A0BA4000FDE82 /* MWFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser.h; sourceTree = "<group>"; };
+		1193F1C0149A0BA4000FDE82 /* MWFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedParser.m; sourceTree = "<group>"; };
+		1193F1C1149A0BA4000FDE82 /* MWFeedParser_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser_Private.h; sourceTree = "<group>"; };
+		1193F1D2149A1108000FDE82 /* Ad4Max.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ad4Max.framework; sourceTree = "<group>"; };
+		1193F1D4149A110E000FDE82 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1193F1D8149A113A000FDE82 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		1193F1D9149A113A000FDE82 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		1193F1DA149A113A000FDE82 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1193F18C1499F578000FDE82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1193F1D7149A1117000FDE82 /* SystemConfiguration.framework in Frameworks */,
+				1193F1D5149A110E000FDE82 /* CoreTelephony.framework in Frameworks */,
+				1193F1D3149A1108000FDE82 /* Ad4Max.framework in Frameworks */,
+				1193F1941499F578000FDE82 /* UIKit.framework in Frameworks */,
+				1193F1961499F578000FDE82 /* Foundation.framework in Frameworks */,
+				1193F1981499F578000FDE82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1193F1841499F578000FDE82 = {
+			isa = PBXGroup;
+			children = (
+				1193F1991499F578000FDE82 /* ad4Max-SampleApp */,
+				1193F1921499F578000FDE82 /* Frameworks */,
+				1193F1901499F578000FDE82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1193F1901499F578000FDE82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1193F18F1499F578000FDE82 /* ad4Max-SampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1193F1921499F578000FDE82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */,
+				1193F1D4149A110E000FDE82 /* CoreTelephony.framework */,
+				1193F1D2149A1108000FDE82 /* Ad4Max.framework */,
+				1193F1931499F578000FDE82 /* UIKit.framework */,
+				1193F1951499F578000FDE82 /* Foundation.framework */,
+				1193F1971499F578000FDE82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1193F1991499F578000FDE82 /* ad4Max-SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				1193F1AF149A0BA4000FDE82 /* MWFeedParser */,
+				1193F1A21499F578000FDE82 /* AppDelegate.h */,
+				1193F1A31499F578000FDE82 /* AppDelegate.m */,
+				1193F19A1499F578000FDE82 /* Supporting Files */,
+				1193F1AA1499F9A6000FDE82 /* FeedViewController.h */,
+				1193F1AB1499F9A6000FDE82 /* FeedViewController.m */,
+				1193F1AC1499F9A6000FDE82 /* FeedViewController.xib */,
+				1193F1D8149A113A000FDE82 /* AboutViewController.h */,
+				1193F1D9149A113A000FDE82 /* AboutViewController.m */,
+				1193F1DA149A113A000FDE82 /* AboutViewController.xib */,
+			);
+			path = "ad4Max-SampleApp";
+			sourceTree = "<group>";
+		};
+		1193F19A1499F578000FDE82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1193F19B1499F578000FDE82 /* ad4Max-SampleApp-Info.plist */,
+				1193F19C1499F578000FDE82 /* InfoPlist.strings */,
+				1193F19F1499F578000FDE82 /* main.m */,
+				1193F1A11499F578000FDE82 /* ad4Max-SampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1193F1AF149A0BA4000FDE82 /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				1193F1B0149A0BA4000FDE82 /* Categories */,
+				1193F1BA149A0BA4000FDE82 /* MWFeedParser */,
+			);
+			path = MWFeedParser;
+			sourceTree = "<group>";
+		};
+		1193F1B0149A0BA4000FDE82 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1193F1B1149A0BA4000FDE82 /* GTMDefines.h */,
+				1193F1B2149A0BA4000FDE82 /* GTMNSString+HTML.h */,
+				1193F1B3149A0BA4000FDE82 /* GTMNSString+HTML.m */,
+				1193F1B4149A0BA4000FDE82 /* NSDate+InternetDateTime.h */,
+				1193F1B5149A0BA4000FDE82 /* NSDate+InternetDateTime.m */,
+				1193F1B6149A0BA4000FDE82 /* NSString+HTML.h */,
+				1193F1B7149A0BA4000FDE82 /* NSString+HTML.m */,
+				1193F1B8149A0BA4000FDE82 /* NSString+XMLEntities.h */,
+				1193F1B9149A0BA4000FDE82 /* NSString+XMLEntities.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1193F1BA149A0BA4000FDE82 /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				1193F1BB149A0BA4000FDE82 /* MWFeedInfo.h */,
+				1193F1BC149A0BA4000FDE82 /* MWFeedInfo.m */,
+				1193F1BD149A0BA4000FDE82 /* MWFeedItem.h */,
+				1193F1BE149A0BA4000FDE82 /* MWFeedItem.m */,
+				1193F1BF149A0BA4000FDE82 /* MWFeedParser.h */,
+				1193F1C0149A0BA4000FDE82 /* MWFeedParser.m */,
+				1193F1C1149A0BA4000FDE82 /* MWFeedParser_Private.h */,
+			);
+			path = MWFeedParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1193F18E1499F578000FDE82 /* ad4Max-SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1193F1A71499F578000FDE82 /* Build configuration list for PBXNativeTarget "ad4Max-SampleApp" */;
+			buildPhases = (
+				1193F18B1499F578000FDE82 /* Sources */,
+				1193F18C1499F578000FDE82 /* Frameworks */,
+				1193F18D1499F578000FDE82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ad4Max-SampleApp";
+			productName = "ad4Max-SampleApp";
+			productReference = 1193F18F1499F578000FDE82 /* ad4Max-SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1193F1861499F578000FDE82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1193F1891499F578000FDE82 /* Build configuration list for PBXProject "ad4Max-SampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1193F1841499F578000FDE82;
+			productRefGroup = 1193F1901499F578000FDE82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1193F18E1499F578000FDE82 /* ad4Max-SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1193F18D1499F578000FDE82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1193F19E1499F578000FDE82 /* InfoPlist.strings in Resources */,
+				1193F1AE1499F9A6000FDE82 /* FeedViewController.xib in Resources */,
+				1193F1DC149A113A000FDE82 /* AboutViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1193F18B1499F578000FDE82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1193F1A01499F578000FDE82 /* main.m in Sources */,
+				1193F1A41499F578000FDE82 /* AppDelegate.m in Sources */,
+				1193F1AD1499F9A6000FDE82 /* FeedViewController.m in Sources */,
+				1193F1C2149A0BA4000FDE82 /* GTMNSString+HTML.m in Sources */,
+				1193F1C3149A0BA4000FDE82 /* NSDate+InternetDateTime.m in Sources */,
+				1193F1C4149A0BA4000FDE82 /* NSString+HTML.m in Sources */,
+				1193F1C5149A0BA4000FDE82 /* NSString+XMLEntities.m in Sources */,
+				1193F1C6149A0BA4000FDE82 /* MWFeedInfo.m in Sources */,
+				1193F1C7149A0BA4000FDE82 /* MWFeedItem.m in Sources */,
+				1193F1C8149A0BA4000FDE82 /* MWFeedParser.m in Sources */,
+				1193F1DB149A113A000FDE82 /* AboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1193F19C1499F578000FDE82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1193F19D1499F578000FDE82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1193F1A51499F578000FDE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1193F1A61499F578000FDE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1193F1A81499F578000FDE82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ad4Max-SampleApp/ad4Max-SampleApp-Prefix.pch";
+				INFOPLIST_FILE = "ad4Max-SampleApp/ad4Max-SampleApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1193F1A91499F578000FDE82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ad4Max-SampleApp/ad4Max-SampleApp-Prefix.pch";
+				INFOPLIST_FILE = "ad4Max-SampleApp/ad4Max-SampleApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1193F1891499F578000FDE82 /* Build configuration list for PBXProject "ad4Max-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1193F1A51499F578000FDE82 /* Debug */,
+				1193F1A61499F578000FDE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1193F1A71499F578000FDE82 /* Build configuration list for PBXNativeTarget "ad4Max-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1193F1A81499F578000FDE82 /* Debug */,
+				1193F1A91499F578000FDE82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1193F1861499F578000FDE82 /* Project object */;
+}
