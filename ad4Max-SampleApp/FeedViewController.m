@@ -137,8 +137,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    
-    NSLog(@"ad frame: x: %.2f y: %.2f width: %.2f height: %.2f",self.adView.frame.origin.x,self.adView.frame.origin.y,self.adView.frame.size.width,self.adView.frame.size.height);
     return YES;
 }
 
