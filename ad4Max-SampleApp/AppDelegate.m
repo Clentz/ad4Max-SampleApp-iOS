@@ -32,18 +32,19 @@
     FeedViewController *feedvc = [[FeedViewController alloc] initWithNibName:nil bundle:nil];
     AboutViewController *aboutvc = [[AboutViewController alloc] initWithNibName:nil bundle:nil];
     
+    UITabBarItem *feedTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Publigroupe" image:[UIImage imageNamed:@"feed.png"] tag:0];
+    UITabBarItem *aboutTabBarItem = [[UITabBarItem alloc] initWithTitle:@"About" image:[UIImage imageNamed:@"about.png"] tag:1];
+    
+    [feedvc setTabBarItem:feedTabBarItem];
+    [aboutvc setTabBarItem:aboutTabBarItem];
+    
     [tabController setViewControllers:[NSArray arrayWithObjects:feedvc,aboutvc,nil]];
-    
-    [feedvc release];
-    [aboutvc release];
-    
-    UITabBarItem *feedTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Publigroupe" image:nil tag:0];
-    UITabBarItem *aboutTabBarItem = [[UITabBarItem alloc] initWithTitle:@"About" image:nil tag:1];
-    
-    [tabController setTabBarItem:[NSArray arrayWithObjects:feedTabBarItem,aboutTabBarItem,nil]];
     
     [feedTabBarItem release];
     [aboutTabBarItem release];
+    
+    [feedvc release];
+    [aboutvc release];
     
     [self.window setRootViewController:tabController];
     

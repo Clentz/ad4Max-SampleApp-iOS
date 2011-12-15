@@ -27,6 +27,8 @@
 		1193F1D7149A1117000FDE82 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */; };
 		1193F1DB149A113A000FDE82 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1D9149A113A000FDE82 /* AboutViewController.m */; };
 		1193F1DC149A113A000FDE82 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1193F1DA149A113A000FDE82 /* AboutViewController.xib */; };
+		1193F207149A417D000FDE82 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F206149A417D000FDE82 /* about.png */; };
+		1193F20A149A41EA000FDE82 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F209149A41EA000FDE82 /* feed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		1193F1D8149A113A000FDE82 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1193F1D9149A113A000FDE82 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		1193F1DA149A113A000FDE82 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		1193F206149A417D000FDE82 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		1193F209149A41EA000FDE82 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		1193F1991499F578000FDE82 /* ad4Max-SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1193F209149A41EA000FDE82 /* feed.png */,
+				1193F206149A417D000FDE82 /* about.png */,
 				1193F1AF149A0BA4000FDE82 /* MWFeedParser */,
 				1193F1A21499F578000FDE82 /* AppDelegate.h */,
 				1193F1A31499F578000FDE82 /* AppDelegate.m */,
@@ -234,6 +240,8 @@
 				1193F19E1499F578000FDE82 /* InfoPlist.strings in Resources */,
 				1193F1AE1499F9A6000FDE82 /* FeedViewController.xib in Resources */,
 				1193F1DC149A113A000FDE82 /* AboutViewController.xib in Resources */,
+				1193F207149A417D000FDE82 /* about.png in Resources */,
+				1193F20A149A41EA000FDE82 /* feed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +372,7 @@
 				1193F1A91499F578000FDE82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
