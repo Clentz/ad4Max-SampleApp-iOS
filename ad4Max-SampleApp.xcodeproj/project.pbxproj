@@ -22,7 +22,6 @@
 		1193F1C6149A0BA4000FDE82 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1BC149A0BA4000FDE82 /* MWFeedInfo.m */; };
 		1193F1C7149A0BA4000FDE82 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1BE149A0BA4000FDE82 /* MWFeedItem.m */; };
 		1193F1C8149A0BA4000FDE82 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1C0149A0BA4000FDE82 /* MWFeedParser.m */; };
-		1193F1D3149A1108000FDE82 /* Ad4Max.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D2149A1108000FDE82 /* Ad4Max.framework */; };
 		1193F1D5149A110E000FDE82 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D4149A110E000FDE82 /* CoreTelephony.framework */; };
 		1193F1D7149A1117000FDE82 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */; };
 		1193F1DB149A113A000FDE82 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1193F1D9149A113A000FDE82 /* AboutViewController.m */; };
@@ -31,6 +30,7 @@
 		1193F20A149A41EA000FDE82 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F209149A41EA000FDE82 /* feed.png */; };
 		1193F211149A43CE000FDE82 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F20F149A43CE000FDE82 /* Icon.png */; };
 		1193F212149A43CE000FDE82 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1193F210149A43CE000FDE82 /* Icon@2x.png */; };
+		E4D60D0B149B5FCD006ED726 /* Ad4Max.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D60D0A149B5FCD006ED726 /* Ad4Max.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,6 @@
 		1193F1BF149A0BA4000FDE82 /* MWFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser.h; sourceTree = "<group>"; };
 		1193F1C0149A0BA4000FDE82 /* MWFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWFeedParser.m; sourceTree = "<group>"; };
 		1193F1C1149A0BA4000FDE82 /* MWFeedParser_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWFeedParser_Private.h; sourceTree = "<group>"; };
-		1193F1D2149A1108000FDE82 /* Ad4Max.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ad4Max.framework; sourceTree = "<group>"; };
 		1193F1D4149A110E000FDE82 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1193F1D8149A113A000FDE82 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		1193F209149A41EA000FDE82 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
 		1193F20F149A43CE000FDE82 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		1193F210149A43CE000FDE82 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		E4D60D0A149B5FCD006ED726 /* Ad4Max.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ad4Max.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +82,10 @@
 			files = (
 				1193F1D7149A1117000FDE82 /* SystemConfiguration.framework in Frameworks */,
 				1193F1D5149A110E000FDE82 /* CoreTelephony.framework in Frameworks */,
-				1193F1D3149A1108000FDE82 /* Ad4Max.framework in Frameworks */,
 				1193F1941499F578000FDE82 /* UIKit.framework in Frameworks */,
 				1193F1961499F578000FDE82 /* Foundation.framework in Frameworks */,
 				1193F1981499F578000FDE82 /* CoreGraphics.framework in Frameworks */,
+				E4D60D0B149B5FCD006ED726 /* Ad4Max.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +112,9 @@
 		1193F1921499F578000FDE82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4D60D0A149B5FCD006ED726 /* Ad4Max.framework */,
 				1193F1D6149A1117000FDE82 /* SystemConfiguration.framework */,
 				1193F1D4149A110E000FDE82 /* CoreTelephony.framework */,
-				1193F1D2149A1108000FDE82 /* Ad4Max.framework */,
 				1193F1931499F578000FDE82 /* UIKit.framework */,
 				1193F1951499F578000FDE82 /* Foundation.framework */,
 				1193F1971499F578000FDE82 /* CoreGraphics.framework */,

@@ -1,7 +1,7 @@
 //
 //
 //  Ad4MaxBannerViewDelegate.h
-//  ad4Max-SampleApp
+//  Ad4Max SDK 1.0
 //
 //  Copyright 2011 Publigroupe
 //
@@ -90,9 +90,9 @@
   
  If you want to display Ads related to your application (eg. Health related Ads), you can specify categories by this method. A maximum of three categories is possible.
  
- See <this link> for a description of categories codes.
+ The list of categories is still under construction so using this method will not have any effect at this time. Stay tunes!
 
- @return A string containing a maximum of three Ad categories separated by semicolon (eg. '101;2003;200')
+ @return A string containing a maximum of three Ad categories separated by semicolon (eg. '101;2003;200'). 
  */
 - (NSString*)getTargetedPublisherCategories;
 

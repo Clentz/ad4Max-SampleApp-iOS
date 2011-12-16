@@ -74,10 +74,14 @@
 
 - (NSString*)getAdBoxId
 {
-    if(UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation]))
+    if(UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
+        // Return the AD BOX configured to serve portrait Ads
         return @"38eef07c-f3c0-4caf-89e8-251e920d0668";
-    else
+    }
+    else {
+        // Return the AD BOX configured to serve landscape Ads
         return @"8e2dadaa-e618-4c07-aba3-c6fc532c05c4";
+    }
 }
 
 -(NSString*)getAdServerURL
@@ -87,14 +91,31 @@
 
 -(void)bannerView:(Ad4MaxBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
-    NSLog(@"Error");
-    if (self.adView.frame.origin.y >= 0.0) {
-        [UIView beginAnimations:@"hide add" context:nil];
-        [UIView setAnimationDuration:0.5];
-        [self.tableView setFrame:CGRectMake(0.0, 0.0, self.tableView.frame.size.width, self.tableView.frame.size.  height+50)];
-        [self.adView setFrame:CGRectMake(0.0, -50.0, self.adView.frame.size.width, self.adView.frame.size.height)];
-        [UIView commitAnimations];
+    if( [error code] == Ad4MaxBannerSizeError ) {        
+        if(UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
+            // Resize the Ad to match the banner size 320x50
+            [self.adView setFrame:CGRectMake(self.adView.frame.origin.x, self.adView.frame.origin.y, 320.0, 50.0)];
+        }
+        else {
+            // Resize the Ad to match the banner size 480x32
+            [self.adView setFrame:CGRectMake(self.adView.frame.origin.x, self.adView.frame.origin.y, 480.0, 32.0)];
+        }        
+        
+        // do not hide the banner
+        return;
     }
+
+    // Otherwise hide the banner
+    NSLog(@"Error %@", [error description]);
+    
+    [UIView beginAnimations:@"hide add" context:nil];
+    [UIView setAnimationDuration:0.5];
+    
+    [self.adView setFrame:CGRectMake(0.0, -self.adView.frame.size.height, self.adView.frame.size.width, self.adView.frame.size.height)];
+    [self.tableView setFrame:CGRectMake(0.0, self.adView.frame.origin.y+self.adView.frame.size.height, self.tableView.frame.size.width, self.tableView.frame.size.height+self.adView.frame.origin.y+self.adView.frame.size.height)];
+    
+    [UIView commitAnimations];
+
 }
 
 - (void)bannerViewWillLoadAd:(Ad4MaxBannerView *)banner
@@ -106,13 +127,14 @@
 {
     NSLog(@"bannerViewDidLoadAd:");
     
-    if (self.adView.frame.origin.y < 0.0) {    
-        [UIView beginAnimations:@"show add" context:nil];
-        [UIView setAnimationDuration:0.5];
-        [self.tableView setFrame:CGRectMake(0.0, 50.0, self.tableView.frame.size.width, self.tableView.frame.size.  height-50)];
-        [self.adView setFrame:CGRectMake(0.0, 0.0, self.adView.frame.size.width, self.adView.frame.size.height)];
-        [UIView commitAnimations];
-    }
+    [UIView beginAnimations:@"show add" context:nil];
+    [UIView setAnimationDuration:0.5];
+
+    [self.adView setFrame:CGRectMake(0.0, 0.0, self.adView.frame.size.width, self.adView.frame.size.height)];
+    [self.tableView setFrame:CGRectMake(0.0, self.adView.frame.origin.y+self.adView.frame.size.height, self.tableView.frame.size.width, self.tableView.frame.size.height+self.adView.frame.origin.y+self.adView.frame.size.height)];
+    
+    [UIView commitAnimations];
+    
 }
 
 #pragma mark -
