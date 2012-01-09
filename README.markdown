@@ -82,7 +82,7 @@ Here is the sample application code to see how to make the Ad appear and disappe
 
 	}
 	
-You can see that the Ad4MaxBannerView (UIView) is positioned out of the screen in Interface Builder, this is how the Ad banner is not shown on load.
+Notice that the Ad4MaxBannerView (UIView) is positioned out of the screen in Interface Builder, this is how the Ad banner is not shown on load.
 
 	
 Licence
