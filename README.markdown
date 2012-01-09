@@ -38,7 +38,7 @@ Each time the device orientation changes, your delegate method getAdBoxId will b
 	    }
 	}
 
-Notice that you also have to resize the banner UIView to match the current banner size but you should only do this once the new Ad have been received (otherwise the Ad banner will be either too large (landscape to portrait rotation) or cut (portrait to landscape rotation)). You will be noticed of this because your delegate bannerView:didFailToReceiveAdWithError: method will be called with an error type Ad4MaxBannerSizeError. Here is the way this is handled in the sample application code:
+Notice that you also have to resize the Ad4MaxBannerView (UIView) to match the current banner size but you should only do this once the new Ad have been received (otherwise the Ad banner will be either too large (landscape to portrait rotation) or cut (portrait to landscape rotation)). You will be noticed of this because your delegate bannerView:didFailToReceiveAdWithError: method will be called with an error type Ad4MaxBannerSizeError. Here is the way this is handled in the sample application code:
 
 	-(void)bannerView:(Ad4MaxBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 	{
@@ -67,19 +67,6 @@ How to show an Ad banner only when an Ad is available
 The basic way to achieve this is to hide the banner on load and when bannerView:didFailToReceiveAdWithError: is called on your delegate and to make it visible when bannerViewDidLoadAd: is called on your delegate.
 
 Here is the sample application code to see how to make the Ad appear and disappear smoothly:
-
-	-(void)bannerView:(Ad4MaxBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-	{
-
-	    [UIView beginAnimations:@"hide add" context:nil];
-	    [UIView setAnimationDuration:0.5];
-
-	    [self.adView setFrame:CGRectMake(0.0, -self.adView.frame.size.height, self.adView.frame.size.width, self.adView.frame.size.height)];
-	    [self.tableView setFrame:CGRectMake(0.0, self.adView.frame.origin.y+self.adView.frame.size.height, self.tableView.frame.size.width, self.tableView.frame.size.height+self.adView.frame.origin.y+self.adView.frame.size.height)];
-
-	    [UIView commitAnimations];
-
-	}
 	
 	-(void)bannerView:(Ad4MaxBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 	{
@@ -94,6 +81,9 @@ Here is the sample application code to see how to make the Ad appear and disappe
 	    [UIView commitAnimations];
 
 	}
+	
+You can see that the Ad4MaxBannerView (UIView) is positioned out of the screen in Interface Builder, this is how the Ad banner is not shown on load.
+
 	
 Licence
 ===========
