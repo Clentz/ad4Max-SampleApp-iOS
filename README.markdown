@@ -3,21 +3,19 @@ Intro
 
 This application demonstrates the use of ad4Max iOS SDK through a very basic App (a RSS reader).
 
+![Sample application screenshot](http://clentz.github.com/ad4Max-SDK-iOS/tutorial/screenshotSampleApp.png)
+
 It demonstrates also some more advanced use of the SDK like:
-- how to display Ads both in Portrait and Landscape modes
-- how to show an Ad banner only when an Ad is available
+	- how to display Ads both in Portrait and Landscape modes
+	- how to show an Ad banner only when an Ad is available
 
 For more information, see the [GitHub page of the framework](https://github.com/Clentz/ad4Max-SDK-iOS).
-
-About
-=======================
-Ad4max is a Swiss ad network, that enables developers to monetize their websites and apps via advertising. Banners of various sizes can be placed on websites or directly in applications. 
-Ad4max decided to make its SDK public as open source project. So you can adapt it to your own needs.
 
 Installation
 =======================
 
-You can clone the GitHub repository (or download it via GitHub) and then compiles the application by opening the XCode project ad4Max-SampleApp.xcodeproj
+You can clone the GitHub repository (or download it via GitHub) and then compiles the application by opening the XCode project ad4Max-SampleApp.xcodeproj.
+
 Most of the interesting source code is located in FeedViewController.h/.m files.
 
 How to display Ads both in Portrait and Landscape modes
