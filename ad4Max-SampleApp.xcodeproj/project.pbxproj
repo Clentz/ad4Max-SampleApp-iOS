@@ -34,7 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1193F18F1499F578000FDE82 /* ad4Max-SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ad4Max-SampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1193F18F1499F578000FDE82 /* ad4MaxSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ad4MaxSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1193F1931499F578000FDE82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1193F1951499F578000FDE82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1193F1971499F578000FDE82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,7 +104,7 @@
 		1193F1901499F578000FDE82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1193F18F1499F578000FDE82 /* ad4Max-SampleApp.app */,
+				1193F18F1499F578000FDE82 /* ad4MaxSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			);
 			name = "ad4Max-SampleApp";
 			productName = "ad4Max-SampleApp";
-			productReference = 1193F18F1499F578000FDE82 /* ad4Max-SampleApp.app */;
+			productReference = 1193F18F1499F578000FDE82 /* ad4MaxSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -341,7 +341,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ad4Max-SampleApp/ad4Max-SampleApp-Prefix.pch";
 				INFOPLIST_FILE = "ad4Max-SampleApp/ad4Max-SampleApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ad4MaxSampleApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -349,8 +349,8 @@
 		1193F1A91499F578000FDE82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: OCTO Technology";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: OCTO Technology";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -358,9 +358,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ad4Max-SampleApp/ad4Max-SampleApp-Prefix.pch";
 				INFOPLIST_FILE = "ad4Max-SampleApp/ad4Max-SampleApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "A6A93F70-F9D6-4CB0-BA46-826ADC1DE63B";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A6A93F70-F9D6-4CB0-BA46-826ADC1DE63B";
+				PRODUCT_NAME = ad4MaxSampleApp;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
