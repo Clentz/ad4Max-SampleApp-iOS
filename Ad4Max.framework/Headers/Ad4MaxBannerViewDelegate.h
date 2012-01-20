@@ -80,7 +80,9 @@
 
 /** Set the location of the user of your application. 
  
- You have to provide a standard CLLocation object and use in your application a CLLocationManager to update it. You don't need to notify the banner view when an update to the user location is available, this method will be called each time a new Ad will be loaded.
+ You have to provide a standard CLLocation object and use in your application a CLLocationManager to update it. You don't need to notify the banner view when an update to the user location is available, this method will be called each time a new Ad will be loaded. 
+ 
+ Notice that you should not request the user location only to target Ads as your application might be rejected by Apple (see §4.4 in App Store Review Guidelines: https://developer.apple.com/appstore/resources/approval/guidelines.html)
  
  @return A CLLocation object giving the current device location
  */
